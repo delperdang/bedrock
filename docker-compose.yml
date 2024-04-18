@@ -2,17 +2,16 @@ version: '3.4'
 
 services:
   bds:
-    image: itzg/minecraft-bedrock-server
+    image: itzg/minecraft-bedrock-server:latest
     environment:
-      EULA: "TRUE"
-      GAMEMODE: survival
-      DIFFICULTY: normal
+      - EULA="TRUE"
+      - VERSION=LATEST
+      - TZ=America/New_York
+      - GAMEMODE=survival
+      - DIFFICULTY=normal
     ports:
       - "19132:19132/udp"
     volumes:
-      - bds:/data
+      - //d/data:/data
     stdin_open: true
     tty: true
-
-volumes:
-  bds: {}

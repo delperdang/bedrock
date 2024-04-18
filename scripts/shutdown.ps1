@@ -1,2 +1,2 @@
-docker-compose down --volumes
+docker-compose down
 docker rmi itzg/minecraft-bedrock-server
