@@ -4,7 +4,7 @@ services:
   bds:
     image: itzg/minecraft-bedrock-server:latest
     environment:
-      - EULA="TRUE"
+      - EULA=TRUE
       - VERSION=LATEST
       - TZ=America/New_York
       - GAMEMODE=survival
