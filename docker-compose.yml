@@ -7,10 +7,11 @@ services:
       - EULA=TRUE
       - VERSION=LATEST
       - TZ=America/New_York
-      - GAMEMODE=survival
+      - GAMEMODE=creative
       - DIFFICULTY=normal
     ports:
       - "19132:19132/udp"
+    restart: 'unless-stopped'
     volumes:
       - //d/data:/data
     stdin_open: true
