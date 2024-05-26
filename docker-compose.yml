@@ -13,6 +13,6 @@ services:
       - "19132:19132/udp"
     restart: 'unless-stopped'
     volumes:
-      - /run/media/reguser/Elements/data:/data
+      - /mnt/Elements/data:/data
     stdin_open: true
     tty: true
