@@ -13,6 +13,6 @@ services:
       - "19132:19132/udp"
     restart: 'unless-stopped'
     volumes:
-      - /mnt/Elements/data:/data
+      - /mnt/d/bedrock/data:/data
     stdin_open: true
     tty: true
