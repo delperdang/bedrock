@@ -5,11 +5,6 @@ services:
       - EULA=TRUE
       - VERSION=LATEST
       - TZ=America/New_York
-      - SERVER-NAME=DelperRealm
-      - GAMEMODE=survival
-      - DIFFICULTY=peaceful
-      - ALLOW-CHEATS=true
-      - MAX-PLAYERS=3
     ports:
       - "19132:19132/udp"
     restart: 'unless-stopped'
