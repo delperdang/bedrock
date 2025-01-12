@@ -1,5 +1,3 @@
-version: '3.4'
-
 services:
   bds:
     image: itzg/minecraft-bedrock-server:latest
